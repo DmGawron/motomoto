@@ -4,16 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>OTOMOTO - nowe i używane samochody</title>
+		<title>MOTOMOTO - nowe i używane samochody</title>
+		<!-- <link rel="stylesheet" href="offers.css"> -->
 		<link rel="stylesheet" href="style.css" />
-		<script
-			src="https://kit.fontawesome.com/2020898895.js"
-			crossorigin="anonymous"
-		></script>
+		<!-- <script src="https://kit.fontawesome.com/40705dc7e3.js" crossorigin="anonymous"></script> -->
+		<!-- <link href='https://unpkg.com/css.gg@2.0.0/icons/css/add-r.css' rel='stylesheet'> -->
+		<script src="https://kit.fontawesome.com/43f006ea5e.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		
 		<div class="nav">
-			<img src="/img/logo.svg" alt="logo-otomoto" />
+			<img src="img/logo.svg" alt="logo-otomoto" />
 
 			<div class="container">
 				<div class="bt1-UA-transport">
@@ -21,7 +22,7 @@
 				</div>
 				<div class="bt2-finances">
 					<a class="bt2" href="#"
-						><span>nowość</span> Finansowanie na OTOMOTO</a
+						><span>nowość</span> Finansowanie na MOTOMOTO</a
 					>
 				</div>
 				<div class="bt3-motopedia"><a href="#">Motopedia</a></div>
@@ -77,55 +78,276 @@
 					</div>
 					<div class="details">
 						<div class="det-left">
-							<div class="body">
-								<label>Typ nadwozia</label>
-								<input type="text" />
+							<div class="car-body section">
+								<label for="long">Typ nadwozia</label>
+								<div class="input-btn-container">
+									<input type="text" placeholder="Typ nadwozia" class="long" id="type--input" />
+									<button class="btn-arrow"><i class="fa-solid fa-arrow-down"></i></button>
+								</div>
+								<ul class="car-body-ul list-hidden">
+									<li>Wybierz</li>
+									<li>Auta małe</li>
+									<li>Auta miejskie</li>
+									<li>Coupe</li>
+									<li>Kabriolet</li>
+									<li>Kombi</li>
+									<li>Kompakt</li>
+									<li>Minivan</li>
+									<li>Sedan</li>
+									<li>SUV</li>
+								</ul>
 							</div>
-							<div class="model">
-								<label>Model pojazdu</label>
-								<input type="text" />
+							<div class="model section">
+								<label >Model pojazdu</label>
+								<div class="input-btn-container">
+									<input type="text" placeholder="Model pojazdu" class="long not-active" id="model--input"/>
+									<button class="btn-arrow not-active"><i class="fa-solid fa-arrow-down"></i></button>
+								</div>
+								
 							</div>
-							<div class="price">
-								<legend>Cena</legend>
-								<input type="text" />
-								<input type="text" />
+							<div class="price section">
+								<label >Cena</label>
+								<div class="price-inputs">
+
+									<div class="input-btn-container">
+										<input type="text" placeholder="od" class="short-input" id="price-from--input"/>
+										<button class="btn-arrow"><i class="fa-solid fa-arrow-down"></i></button>
+									</div>
+									<ul class="price-from-ul list-hidden">
+									<li>Wybierz</li>
+									<li>2 000 PLN</li>
+									<li>3 000 PLN</li>
+									<li>5 000 PLN</li>
+									<li>10 000 PLN</li>
+									<li>15 000 PLN</li>
+									<li>20 000 PLN</li>
+									<li>25 000 PLN</li>
+									<li>30 000 PLN</li>
+									<li>35 000 PLN</li>
+									<li>40 000 PLN</li>
+									<li>50 000 PLN</li>
+									<li>65 000 PLN</li>
+									<li>80 000 PLN</li>
+									<li>100 000 PLN</li>
+									<li>200 000 PLN</li>
+									<li>500 000 PLN</li>
+								</ul>
+								<div class="input-btn-container">
+
+									<input type="text" placeholder="do" class="short-input" id="price-to--input"/>
+									<button class="btn-arrow"><i class="fa-solid fa-arrow-down"></i></button>
+									<ul class="price-to-ul list-hidden ">
+										<li>Wybierz</li>
+										<li>2 000 PLN</li>
+										<li>3 000 PLN</li>
+										<li>5 000 PLN</li>
+										<li>10 000 PLN</li>
+										<li>15 000 PLN</li>
+										<li>20 000 PLN</li>
+										<li>25 000 PLN</li>
+										<li>30 000 PLN</li>
+										<li>35 000 PLN</li>
+										<li>40 000 PLN</li>
+										<li>50 000 PLN</li>
+										<li>65 000 PLN</li>
+										<li>80 000 PLN</li>
+										<li>100 000 PLN</li>
+										<li>200 000 PLN</li>
+										<li>500 000 PLN</li>
+									</ul>
+								</div>
 							</div>
-							<div class="fuel">
-								<label>Rodzaj paliwa</label>
-								<input type="text" />
+							</div>
+							<div class="fuel section">
+								<label >Rodzaj paliwa</label>
+								<div class="input-btn-container">
+									<input type="text" placeholder="Rodzaj paliwa" class="long" id="fuel--input"/>
+									<button class="btn-arrow"><i class="fa-solid fa-arrow-down"></i></button>
+								</div>
+								<ul class="fuel-type-ul list-hidden">
+									<li>Wybierz</li>
+									<li>Benzyna</li>
+									<li>Benzyna + CLG</li>
+									<li>Benzyna + LPG</li>
+									<li>Diesel</li>
+									<li>Elektryczny</li>
+									<li>Hybryda</li>
+								</ul>
 							</div>
 						</div>
 						<div class="det-right">
-							<div class="brand">
-								<label>Marka pojazdu </label>
-								<input type="text" />
+							<div class="brand section">
+								<label >Marka pojazdu </label>
+								<div class="input-btn-container">
+								<input type="text" placeholder="Marka pojazdu" class="long" id="brand--input"/>
+								<button class="btn-arrow"><i class="fa-solid fa-arrow-down"></i></button>
+								</div>
+								<ul class="brand-ul list-hidden">
+									<li>Wybierz</li>
+									<li>Alfa Romeo</li>
+									<li>Audi</li>
+									<li>BMW</li>
+									<li>Chevrolet</li>
+									<li>Citroen</li>
+									<li>Fiat</li>
+									<li>Ford</li>
+									<li>Honda</li>
+									<li>Maserati</li>
+									<li>Mercedes Benz</li>
+									<li>Nissan</li>
+									<li>Peugeot</li>
+									<li>Renault</li>
+									<li>Seat</li>
+									<li>Skoda</li>
+									<li>Subaru</li>
+									<li>Suzuki</li>
+									<li>Toyota</li>
+									<li>Volkswagen</li>
+									
+								</ul>
 							</div>
-							<div class="generation">
-								<label>Generacja </label>
-								<input type="text" />
+							<div class="generation section">
+								<label >Generacja </label>
+								<div class="input-btn-container">
+								<input type="text" placeholder="Generacja" class="long not-active" id="generation--input" disabled/>
+								<button class="btn-arrow not-active"><i class="fa-solid fa-arrow-down"></i></button>
+								</div>
 							</div>
-							<div class="year">
-								<legend>Rok produkcji</legend>
-								<input type="text" />
-								<input type="text" />
+							<div class="year section">
+								<legend >Rok produkcji</legend>
+								<div class="year-inputs">
+
+									<div class="input-btn-container">
+										<input type="text" placeholder="od" class="short-input" id="year-from--input"/>
+										<button class="btn-arrow"><i class="fa-solid fa-arrow-down"></i></button>
+										<ul class="year-from-ul list-hidden">
+											<li>Wybierz</li>
+											<li>2023</li>
+											<li>2022</li>
+											<li>2021</li>
+											<li>2020</li>
+											<li>2019</li>
+											<li>2018</li>
+											<li>2017</li>
+											<li>2016</li>
+											<li>2015</li>
+											<li>2014</li>
+											<li>2013</li>
+											<li>2012</li>
+											<li>2011</li>
+											<li>2010</li>
+											<li>2009</li>
+											<li>2008</li>
+											<li>2007</li>
+											<li>2006</li>
+											<li>2005</li>
+											<li>2004</li>
+											<li>2003</li>
+											<li>2002</li>
+											<li>2001</li>
+											<li>2000</li>
+											<li>1999</li>
+											<li>1998</li>
+											<li>1997</li>
+											<li>1996</li>
+											<li>1995</li>
+											<li>1994</li>
+										</ul>
+									</div>
+									<div class="input-btn-container">
+										
+										<input type="text" placeholder="do" class="short-input" id="year-to--input"/>
+										<button class="btn-arrow"><i class="fa-solid fa-arrow-down"></i></button>
+										<ul class="year-to-ul list-hidden">
+											<li>Wybierz</li>
+											<li>2023</li>
+											<li>2022</li>
+											<li>2021</li>
+											<li>2020</li>
+											<li>2019</li>
+											<li>2018</li>
+											<li>2017</li>
+											<li>2016</li>
+											<li>2015</li>
+											<li>2014</li>
+											<li>2013</li>
+											<li>2012</li>
+											<li>2011</li>
+											<li>2010</li>
+											<li>2009</li>
+											<li>2008</li>
+											<li>2007</li>
+											<li>2006</li>
+											<li>2005</li>
+											<li>2004</li>
+											<li>2003</li>
+											<li>2002</li>
+											<li>2001</li>
+											<li>2000</li>
+											<li>1999</li>
+											<li>1998</li>
+											<li>1997</li>
+											<li>1996</li>
+											<li>1995</li>
+											<li>1994</li>
+										</ul>
+									</div>
 							</div>
-							<div class="mileage">
-								<legend>Przebieg</legend>
-								<input type="text" />
-								<input type="text" />
 							</div>
+							<div class="mileage section">
+								<label >Przebieg</label>
+								<div class="mileage-inputs">
+
+									<div class="input-btn-container">
+										<input type="text" placeholder="od" class="short-input" id="mileage-from--input"/>
+										<button class="btn-arrow"><i class="fa-solid fa-arrow-down"></i></button>
+										<ul class="mileage-from-ul list-hidden">
+											<li>Wybierz</li>
+											<li>20 000 km</li>
+											<li>35 000 km</li>
+											<li>50 000 km</li>
+											<li>75 000 km</li>
+											<li>100 000 km</li>
+											<li>125 000 km</li>
+											<li>150 000 km</li>
+											<li>200 000 km</li>
+											<li>250 000 km</li>
+											
+										</ul>
+									</div>
+									<div class="input-btn-container">
+										
+										<input type="text" placeholder="do" class="short-input" id="mileage-to--input"/>
+										<button class="btn-arrow"><i class="fa-solid fa-arrow-down"></i></button>
+										<ul class="mileage-to-ul list-hidden">
+											<li>Wybierz</li>
+											<li>20 000 km</li>
+											<li>35 000 km</li>
+											<li>50 000 km</li>
+											<li>75 000 km</li>
+											<li>100 000 km</li>
+											<li>125 000 km</li>
+											<li>150 000 km</li>
+											<li>200 000 km</li>
+											<li>250 000 km</li>
+											
+										</ul>
+									</div>
+								</div>
+								</div>
 						</div>
 					</div>
-
 					<div class="search-bottom">
 						<div class="adv-search">
-							<button>
-								<i class="fa-solid fa-square-full"></i> Wyszukiwanie
+							<button class="btn-advanced-search">
+								<i class="fa-solid fa-magnifying-glass"></i>Wyszukiwanie
 								zaawansowane
 							</button>
 						</div>
 						<div class="show">
-							<button>Pokaż XXX XXX Ogłoszeń</button>
+							<a href="offers.html" class="show-offers">
+								<button class="btn__show" id="btn--show-results">Pokaż <span class="announcements__number"></span> Ogłoszeń</button>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -136,7 +358,7 @@
 			<div class="offers">
 				<div class="of-the-day">
 					<img
-						src="/img/pexels-abdulwahab-alawadhi-3422964.jpg"
+						src="img/pexels-abdulwahab-alawadhi-3422964.jpg"
 						alt="lamborghini"
 					/>
 					<div class="otd-description">
@@ -159,7 +381,7 @@
 					<div class="h-frame">
 						<div class="h offer1">
 							<img
-								src="/img/car-gcc4cc80e2_1920.jpg"
+								src="img/car-gcc4cc80e2_1920.jpg"
 								alt="lamborghini-huracan-oferta"
 							/>
 							<div class="h-o-des">
@@ -174,7 +396,7 @@
 							</div>
 						</div>
 						<div class="h offer2">
-							<img src="/img/pexels-mike-b-170811.jpg" alt="bmw" />
+							<img src="img/pexels-mike-b-170811.jpg" alt="bmw" />
 							<div class="announcements">
 								<h3 class="h3-1">BMW Seria 5 530i</h3>
 								<ul>
@@ -187,7 +409,7 @@
 							</div>
 						</div>
 						<div class="h offer3">
-							<img src="/img/alfa.jpg" alt="alfa-romeo 4c" />
+							<img src="img/alfa.jpg" alt="alfa-romeo 4c" />
 							<div class="announcements">
 								<h3 class="h3-1">Alfa Romeo 4c</h3>
 								<ul>
@@ -200,7 +422,7 @@
 							</div>
 						</div>
 						<div class="h offer4">
-							<img src="/img/merc.jpg" alt="Mercedes Benz Klasa A" />
+							<img src="img/merc.jpg" alt="Mercedes Benz Klasa A" />
 							<div class="announcements">
 								<h3 class="h3-1">Mercedes Benz Klasa A</h3>
 								<ul>
@@ -218,7 +440,7 @@
 				<div class="offers-bottom">
 					<div class="b-offer">
 						<div class="image">
-							<img src="/img/bmw3coupe.jpg" alt="BMW Seria 3 Coupe" />
+							<img src="img/bmw3coupe.jpg" alt="BMW Seria 3 Coupe" />
 						</div>
 						<div class="a-bottom">
 							<h3 class="h3-1">BMW Seria 3 LPG</h3>
@@ -233,7 +455,7 @@
 					</div>
 					<div class="b-offer">
 						<div class="image">
-							<img src="/img/maserati.jpg" alt="Maserati GranTurismo" />
+							<img src="img/maserati.jpg" alt="Maserati GranTurismo" />
 						</div>
 						<div class="a-bottom">
 							<h3 class="h3-1">Maserati GranTurismo</h3>
@@ -248,7 +470,7 @@
 					</div>
 					<div class="b-offer">
 						<div class="image">
-							<img src="/img/audiA6.jpg" alt="Audi A6 S-Line" />
+							<img src="img/audiA6.jpg" alt="Audi A6 S-Line" />
 						</div>
 						<div class="a-bottom">
 							<h3 class="h3-1">Audi A6 S-Line</h3>
@@ -263,7 +485,7 @@
 					</div>
 					<div class="b-offer">
 						<div class="image">
-							<img src="/img/BMW seria4.jpg" alt="BMW Siera 4 benzyna" />
+							<img src="img/BMWseria4.jpg" alt="BMW Siera 4 benzyna" />
 						</div>
 						<div class="a-bottom">
 							<h3 class="h3-1">Bmw Seria 4 320i</h3>
@@ -278,7 +500,7 @@
 					</div>
 					<div class="b-offer">
 						<div class="image">
-							<img src="/img/camaro.jpg" alt="Chevrolet Camaro" />
+							<img src="img/camaro.jpg" alt="Chevrolet Camaro" />
 						</div>
 						<div class="a-bottom">
 							<h3 class="h3-1">Chevrolet Camaro 6.2l</h3>
@@ -293,7 +515,7 @@
 					</div>
 					<div class="b-offer">
 						<div class="image">
-							<img src="/img/ford.jpg" alt="Ford Focus Diesel" />
+							<img src="img/ford.jpg" alt="Ford Focus Diesel" />
 						</div>
 						<div class="a-bottom">
 							<h3 class="h3-1">Ford Focus 1.6</h3>
@@ -308,26 +530,26 @@
 					</div>
 				</div>
 			</div>
-			<div class="google-adsense">
+			<!-- <div class="google-adsense">
 				<div class="google-ad-content"></div>
-			</div>
+			</div> -->
 			<div class="other-services">
 				<div class="banner">
 					<a href="321sprzedane.pl"
-						><img src="/img/321-sprzedane.png" alt="" />
+						><img src="img/321-sprzedane.png" alt="" />
 					</a>
 				</div>
 				<div class="banner">
 					<a href="otomoto/finansowanie.pl">
 						<img
-							src="/img/otomotowebhomepagecarsmile_bottom1655204640068-banner-rectangle-388x360-finansowanie-ototmoto.jpg"
+							src="img/otomotowebhomepagecarsmile_bottom1655204640068-banner-rectangle-388x360-finansowanie-ototmoto.jpg"
 							alt=""
 						/>
 					</a>
 				</div>
 				<div class="banner">
 					<a href="otomotoklik.pl">
-						<img src="/img/klik.png" alt="kup auto bezpiecznie otomoto klik" />
+						<img src="img/klik.png" alt="kup auto bezpiecznie otomoto klik" />
 					</a>
 				</div>
 			</div>
@@ -586,10 +808,10 @@
 		</footer>
 		<p class="footer-bottom-p">Powered by OTOMOTO</p>
 		<div class="bottom-partners">
-			<img src="/img/otomoto-klik-logo.svg" alt="otomoto klik" />
-			<img src="/img/carsmile-logo.svg" alt="carsmile" />
-			<img src="/img/321-logo.svg" alt="321sprzedane" />
-			<img class="motopedia-ad" src="/img/motopedia-logo.svg" alt="Motopedia" />
+			<img src="img/otomoto-klik-logo.svg" alt="otomoto klik" />
+			<img src="img/carsmile-logo.svg" alt="carsmile" />
+			<img src="img/321-logo.svg" alt="321sprzedane" />
+			<img class="motopedia-ad" src="img/motopedia-logo.svg" alt="Motopedia" />
 		</div>
 		<div class="span-bottom">
 			<span></span>
@@ -598,9 +820,47 @@
 		<div class="bottom-apps">
 			<p>Nasze aplikacje w twoim telefonie</p>
 			<div class="apps">
-				<img src="/img/google-play.svg" alt="google play" />
-				<img src="/img/app-store.svg" alt="app store" />
+				<img src="img/google-play.svg" alt="google play" />
+				<img src="img/app-store.svg" alt="app store" />
 			</div>
 		</div>
+		
+		<!-- <div class="generated-offers"> -->
+            <!-- <div class="offer">
+                <div class="offer-img">
+                    <img src="imgCarsBack/alfa159.jpg" alt="">
+                </div>
+
+                <div class="card-details-container">
+
+                    
+                    <div class="offer-car-details">
+                    <h3>Alfa Romeo 159 Jtdm</h3>
+                    <div class="offer-car-parameters">
+                        <span class="car-year">2012</span>
+                        <span class="car-mileage">201223 km</span>
+                        <span class="car-capacity">1 998 cm3</span>
+                        <span class="car-fuel">Diesel</span>
+                    </div>
+                    <div class="car-location"><i class="fa-solid fa-location-dot"></i> Warszawa</div>
+                    </div>
+                    
+                    <div class="car-price-and-financing">
+                        <span class="car-price">19 999 PLN</span>
+                        <p class="car-price-rating">Powyżej średniej <i class="fa-regular fa-chart-bar"></i> </p>
+                        <p class="financing">Już od <span class="financing-installment">777 PLN</span></p>
+                        <p class="check-financing">Sprawdź możliwość finansowania</p>
+                        <div class="follow">
+                            <i class="fa-regular fa-heart"></i>
+                            Obserwuj
+                            <span class="animated-line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        <!-- </div> -->
+	
+		<!-- <script src="js/carsbackend.js"></script> -->
+		<script type="module" src="js/style.js"></script>
 	</body>
 </html>
